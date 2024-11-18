@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إدارة قائمة الموظفين</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>إدارة قائمة الموظفين</h2>
+    <a href="index.html" class="link">الرجوع إلى الجدول</a>
+    <form id="addEmployeeForm">
+      <input type="text" id="newEmployeeName" placeholder="اسم الموظف الجديد" required>
+      <input type="number" id="performanceScore" placeholder="رقم الأداء" required>
+      <button type="submit">إضافة الموظف</button>
+    </form>
+    <ul id="employeeList"></ul>
+  </div>
+  <script src="employees.js"></script>
+</body>
+</html>

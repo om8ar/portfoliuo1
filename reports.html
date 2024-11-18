@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تقارير الحضور</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>تقارير الحضور</h2>
+    <a href="index.html" class="link">الرجوع إلى الجدول</a>
+    <div id="reportButtons">
+      <button onclick="generateReport('daily')">التقرير اليومي</button>
+      <button onclick="generateReport('weekly')">التقرير الأسبوعي</button>
+      <button onclick="generateReport('monthly')">التقرير الشهري</button>
+      <button onclick="generateReport('yearly')">التقرير السنوي</button>
+    </div>
+    <div id="reportContent"></div>
+  </div>
+  <script src="reports.js"></script>
+</body>
+</html>

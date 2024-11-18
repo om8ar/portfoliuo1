@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الصفحة الرئيسية - إدارة الحضور والغياب</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>إدارة الحضور والغياب</h2>
+
+    <!-- روابط صفحات الإدارة والتقارير -->
+    <div id="navigationLinks">
+      <a href="employees.html" class="link">إدارة الموظفين</a>
+      <a href="reports.html" class="link">التقارير</a>
+    </div>
+
+    <!-- الجدول الرئيسي للحضور والغياب -->
+    <table id="attendanceTable">
+      <thead>
+        <tr>
+          <th>اسم الموظف</th>
+          <th>رقم الأداء</th>
+          <th>الأعمال المطلوبة</th>
+          <th>التاريخ</th>
+          <th>إجراءات</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- سيتم إضافة البيانات عبر JavaScript -->
+      </tbody>
+    </table>
+
+    <!-- نموذج إضافة الحضور -->
+    <form id="attendanceForm">
+      <select id="employeeSelect" required>
+        <option value="">اختر الموظف</option>
+        <!-- سيتم إضافة الأسماء هنا عبر JavaScript -->
+      </select>
+      <select id="attendanceStatus" required>
+        <option value="حاضر">حاضر</option>
+        <option value="غائب">غائب</option>
+      </select>
+      <input type="text" id="requiredTask" placeholder="الأعمال المطلوبة" required>
+      <button type="submit">إضافة الحضور / الغياب</button>
+    </form>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
